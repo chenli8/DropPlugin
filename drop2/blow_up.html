@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>放大镜</title>
+	<link rel="stylesheet" href="css/blow_up.css">
+</head>
+<body>
+	<div class="wrap">
+		<div id="left" class="left">
+            <img src="img/smallpic.jpg" alt="小的缩略图">
+			<div class="mark" id="mark"></div>
+		</div>
+		<div id="right" class="right">
+			<img src="img/bigpic.jpg" alt="放大的图">
+		</div>
+	</div>
+	<!--<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/blow_up.js"></script>
+	<script>
+		module.blow()
+	</script>-->
+	<script src="js/sea.js"></script>
+    <script>
+    	seajs.config({
+    		 alias:{"jq":"jquery-1.11.1.min.js"}
+    	})
+    	seajs.use('blow_up.js',function(obj){
+          obj.blow()
+          console.log(obj)
+    	})
+    	//使用  路径 
+    	// document  使用jq
+    </script> 
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>拖拽放大</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button value="出来" id="btn">出来</button>
+	<div class="big">
+		<div class="small"></div>
+	</div>
+	<div class="black" id="black"></div>
+	<!-- <script src="js/c.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/b.js"></script>
+	<script src="js/drop.js"></script> -->
+	<script src="js/sea.js"></script>
+    <script>
+    	seajs.config({
+    		 alias:{"jq":"jquery-1.11.1.min.js"}
+    	})
+    	seajs.use(['drop.js','b.js'],function(obj,obj2){
+            obj.a()
+            obj2.b()
+            //参数对应
+
+    	})
+    	// 使用jq  //参数对应(当参数多个时)  当模块依赖其他模块时，要接受参数
+
+    </script>
+
+</body>
+</html>
